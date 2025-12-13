@@ -41,7 +41,7 @@ export default function HPLandingPage() {
         // After 6 seconds, show fail modal
         setTimeout(() => {
             setModalStep(5); // Go to fail modal
-        }, 6000);
+        }, 30000);
     }, []);
 
     const handleRetry = useCallback(() => {
