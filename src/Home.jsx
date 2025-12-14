@@ -175,7 +175,7 @@ export default function HPLandingPage() {
                                     type="text"
                                     value={modelNumber}
                                     onChange={(e) => setModelNumber(e.target.value)}
-                                    className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-xs sm:text-sm"
+                                    className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-500 text-xs sm:text-sm"
                                     placeholder="Enter model number"
                                 />
                             </div>
@@ -317,7 +317,7 @@ export default function HPLandingPage() {
                         className="absolute inset-0 bg-black/40"
                         onClick={closeModal}
                     />
-                    <div className="bg-white rounded-md max-w-lg w-full max-h-[90vh] sm:max-h-[85vh] overflow-y-auto relative shadow-2xl">
+                    <div className="bg-white rounded-md max-w-lg w-full max-h-[90vh] sm:max-h-[85vh] overflow-y-auto relative shadow-2xl transform -translate-y-6">
                         {/* Modal Header */}
                         <div className="sticky top-0 bg-white border-b border-gray-200 px-4 sm:px-6 lg:px-8 py-3 sm:py-4 flex items-center justify-between rounded-t-2xl z-10">
                             <h2 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 pr-2">Quick Download Free Drivers</h2>
@@ -330,7 +330,7 @@ export default function HPLandingPage() {
                         </div>
 
                         {/* Modal Content */}
-                        <div className="px-4 sm:px-6 lg:px-8 py-6 sm:py-8 lg:py-12">
+                        <div className="px-4 sm:px-6 lg:px-8 pt-2 sm:pt-3 pb-6 sm:pb-16">
                             {/* Step 1: Start Printer Setup */}
                             {modalStep === 1 && (
                                 <div className="text-center">
@@ -364,7 +364,7 @@ export default function HPLandingPage() {
                                                 type="text"
                                                 value={modelNumber}
                                                 onChange={(e) => setModelNumber(e.target.value)}
-                                                className="w-full px-3 sm:px-4 py-3 sm:py-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base lg:text-lg"
+                                                className="w-full px-3 sm:px-4 py-3 sm:py-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 text-sm sm:text-base lg:text-lg"
                                                 placeholder="Enter model number"
                                             />
                                         </div>
@@ -428,7 +428,7 @@ export default function HPLandingPage() {
 
                             {/* Step 4: Loading */}
                             {modalStep === 4 && (
-                                <div className="text-center pt-2 sm:pt-3 pb-6 sm:pb-8">
+                                <div className="text-center pb-6 sm:pb-8">
                                     <p className="text-sm sm:text-base lg:text-lg text-gray-600 mb-4 sm:mb-6 px-2">Verify your printer's {connectionType === 'usb' ? 'USB' : 'WiFi'} connection for a seamless setup process.</p>
                                     <div className="border-t border-gray-200 pt-6 sm:pt-8">
                                         <p className="text-lg sm:text-xl text-gray-500 mb-6 sm:mb-8">Please wait...</p>
@@ -442,7 +442,7 @@ export default function HPLandingPage() {
                                         </div>
                                         <div className="flex items-center justify-center gap-2 sm:gap-3 px-2">
                                             {/* Spinner loader */}
-                                            <div className="w-5 h-5 sm:w-6 sm:h-6 border-4 border-gray-300 border-t-blue-500 rounded-full animate-spin"></div>
+                                            <div className="w-5 h-5 sm:w-6 sm:h-6 border-4 border-gray-300 border-t-sky-500 rounded-full animate-spin"></div>
 
                                             <span className="text-sm sm:text-base lg:text-lg text-gray-500">
                                                 Checking Printer Spooler...
@@ -454,36 +454,37 @@ export default function HPLandingPage() {
                             )}
                             {/* Step 5: Connection Failed */}
                             {modalStep === 5 && (
-                                <div className="text-center pt-2 sm:pt-3 pb-6 sm:pb-8">
+                                <div className="text-center pb-6 sm:pb-8">
                                     <p className="text-sm sm:text-base lg:text-lg text-gray-600 mb-4 sm:mb-6 px-2">Verify your printer's {connectionType === 'usb' ? 'USB' : 'WiFi'} connection for a seamless setup process.</p>
                                     <div className="border-t border-gray-200 pt-6 sm:pt-8">
                                         <div className="flex justify-center mb-6 sm:mb-8">
                                             <img
                                                 src="usb-detup.jpg"
                                                 alt="Connection Failed"
-                                                className="w-48 h-24 sm:w-56 sm:h-28 lg:w-64 lg:h-32 object-contain"
+                                                className="w-12 h-12 sm:w-40 sm:h-20 lg:w-48 lg:h-24 object-contain"
                                                 loading="lazy"
                                             />
+
                                         </div>
-                                        <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-900 mb-4 sm:mb-6 px-2">{connectionType === 'wifi' ? 'Wifi' : 'Wifi'} connection failed.</h3>
-                                        <div className="bg-gray-50 rounded-lg p-4 sm:p-6 mb-4 sm:mb-6 space-y-2 sm:space-y-3">
+                                        <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-900 mb-2 sm:mb-4 px-2">{connectionType === 'wifi' ? 'Wifi' : 'Wifi'} connection failed.</h3>
+                                        <div className="rounded-lg p-4 sm:p-6 mb-3 sm:mb-4 space-y-2 sm:space-y-3">
                                             <p className="text-xs sm:text-sm lg:text-base text-gray-700">
-                                                Check {connectionType === 'wifi' ? 'Wifi' : 'Wifi'} on both ends. <button onClick={handleRetry} className="text-blue-600 hover:text-blue-700 active:text-blue-800 underline font-medium">Retry</button>
+                                                Check {connectionType === 'wifi' ? 'Wifi' : 'Wifi'} on both ends. <button onClick={handleRetry} className="text-sky-600 hover:text-sky-700 active:text-sky-800 underline font-medium">Retry</button>
                                             </p>
                                             <p className="text-xs sm:text-sm lg:text-base text-gray-700">
-                                                Check {connectionType === 'wifi' ? 'Wifi' : 'Wifi'} drivers. <a href="#" className="text-blue-600 hover:text-blue-700 active:text-blue-800 underline font-medium">Check Drivers</a>
+                                                Check {connectionType === 'wifi' ? 'Wifi' : 'Wifi'} drivers. <a href="#" className="text-sky-600 hover:text-sky-700 active:text-sky-800 underline font-medium">Check Drivers</a>
                                             </p>
                                         </div>
                                         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
                                             <button
                                                 onClick={handleRetry}
-                                                className="bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white font-semibold px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg transition-colors text-sm sm:text-base w-full sm:w-auto"
+                                                className="bg-sky-500 hover:bg-sky-600 active:bg-sky-700 text-white font-semibold px-5 sm:px-6 py-2 sm:py-2 rounded-lg transition-colors text-sm sm:text-base w-full sm:w-auto"
                                             >
                                                 Fix Issue
                                             </button>
                                             <button
                                                 onClick={handleNeedAssistance}
-                                                className="bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white font-semibold px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg transition-colors text-sm sm:text-base w-full sm:w-auto"
+                                                className="bg-sky-500 hover:bg-sky-600 active:bg-sky-700 text-white font-semibold px-5 sm:px-6 py-2 sm:py-2 rounded-lg transition-colors text-sm sm:text-base w-full sm:w-auto"
                                             >
                                                 Need Assistance?
                                             </button>
@@ -494,7 +495,7 @@ export default function HPLandingPage() {
 
                             {/* Step 6: Support Form */}
                             {modalStep === 6 && (
-                                <div className="pt-2 sm:pt-3 pb-6 sm:pb-8">
+                                <div className="pb-6 sm:pb-8">
                                     <p className="text-sm sm:text-base lg:text-lg text-gray-600 mb-4 sm:mb-6 px-2">Verify your printer's {connectionType === 'usb' ? 'USB' : 'WiFi'} connection for a seamless setup process.</p>
                                     <div className="border-t border-gray-200 pt-6 sm:pt-8">
                                         <div className="flex justify-center mb-4 sm:mb-6">
@@ -519,7 +520,7 @@ export default function HPLandingPage() {
                                                             name="modelNumber"
                                                             value={modelNumber}
                                                             onChange={(e) => setModelNumber(e.target.value)}
-                                                            className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base"
+                                                            className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 text-sm sm:text-base"
                                                             placeholder="Enter model number"
                                                         />
                                                         <ValidationError prefix="Model Number" field="modelNumber" errors={state.errors} />
@@ -534,7 +535,7 @@ export default function HPLandingPage() {
                                                             value={fullName}
                                                             onChange={(e) => setFullName(e.target.value)}
                                                             required
-                                                            className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base"
+                                                            className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 text-sm sm:text-base"
                                                             placeholder="Enter your full name"
                                                         />
                                                         <ValidationError prefix="Full Name" field="fullName" errors={state.errors} />
@@ -549,7 +550,7 @@ export default function HPLandingPage() {
                                                             value={phoneNumber}
                                                             onChange={(e) => setPhoneNumber(e.target.value)}
                                                             required
-                                                            className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base"
+                                                            className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 text-sm sm:text-base"
                                                             placeholder="Enter your phone number"
                                                         />
                                                         <ValidationError prefix="Phone Number" field="phoneNumber" errors={state.errors} />
