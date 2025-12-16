@@ -44,10 +44,10 @@ export default function ContactPage() {
                                     Contact Email:
                                 </h3>
                                 <a
-                                    href="mailto:contact@printandink.online"
+                                    href="mailto:Info@hawlettprint.online"
                                     className="text-cyan-600 hover:text-cyan-700 transition-colors text-lg"
                                 >
-                                    contact@printandink.online
+                                    Info@hawlettprint.online
                                 </a>
                             </div>
                         </div>

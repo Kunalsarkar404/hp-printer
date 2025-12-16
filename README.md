@@ -1,15 +1,15 @@
-# Print & Ink Online - Complete E-commerce Website
+# Hawlett Print - Complete E-commerce Website
 
 A fully responsive e-commerce website for printer sales and accessories, built with React 18, Vite, Tailwind CSS v4.1, and React Router.
 
 ## 🚀 Features
 
 - **Fully Responsive Design**: Mobile-first approach with responsive layouts for all screen sizes
-- **Multi-Page Application**: Complete navigation with Home, About, Shop, Contact, and HP Printer pages
+- **Multi-Page Application**: Complete navigation with Home, About, Shop, Contact, Terms, Privacy, Refund, and HP Printer pages
 - **Modern UI/UX**: Clean, professional design matching provided screenshots
 - **Interactive Components**: Modal dialogs, dropdown menus, pagination, and form validation
 - **Formspree Integration**: Contact and support forms with backend integration
-- **Optimized Performance**: Lazy loading images, memoized callbacks, and efficient rendering
+- **Optimized Performance**: Lazy loading images, memoized callbacks, windmill loading spinner, and efficient rendering
 
 ## 📁 Project Structure
 
@@ -31,7 +31,10 @@ hd-printer/
 │   │   ├── HomePage.jsx        # Main landing page
 │   │   ├── AboutPage.jsx       # About us page
 │   │   ├── ShopPage.jsx        # Products catalog with filters
-│   │   └── ContactPage.jsx     # Contact form page
+│   │   ├── ContactPage.jsx     # Contact form page
+│   │   ├── TermsPage.jsx       # Terms & Conditions page
+│   │   ├── PrivacyPage.jsx     # Privacy Policy page
+│   │   └── RefundPage.jsx      # Refund Policy page
 │   ├── Home.jsx                # HP Printer landing page (with modal)
 │   ├── App.jsx                 # Main app with routing
 │   ├── main.jsx               # App entry point
@@ -67,11 +70,30 @@ hd-printer/
 - **Product Cards**: Image, title, price, and action buttons
 
 ### 4. Contact Page (`/contact`)
-- **Contact Form**: Name, email, subject, message fields
-- **Contact Email**: Direct email link
+- **Contact Form**: Name, email, subject, message fields (Formspree integrated)
+- **Contact Email**: Direct email link to Info@hawlettprint.online
 - **Location Section**: Visual representation
 
-### 5. HP Printer Page (`/hp-printer`)
+### 5. Terms & Conditions Page (`/terms`)
+- **Complete Terms**: Website usage, orders, payment, shipping, returns, IP, liability, privacy, governing law
+- **Contact Section**: Support email for questions
+
+### 6. Privacy Policy Page (`/privacy`)
+- **Information Collection**: Personal details, device & usage info
+- **Usage Explanation**: How data is used
+- **Sharing Policy**: When and how data is shared
+- **Cookies & Tracking**: Cookie usage and management
+- **User Rights**: Privacy rights and CCPA compliance
+- **Security Measures**: Data protection information
+
+### 7. Refund Policy Page (`/refund`)
+- **Eligibility Criteria**: 14-day return window
+- **Return Process**: Step-by-step instructions
+- **Refund Timeline**: 7-10 business days
+- **Exchange Policy**: Defective/damaged items
+- **Contact Information**: Support email for returns
+
+### 8. HP Printer Page (`/hp-printer`)
 - **Modal Wizard**: Multi-step printer setup process
   - Step 1: Start setup
   - Step 2: Model number entry
@@ -89,6 +111,9 @@ hd-printer/
 /about               → AboutPage
 /shop                → ShopPage
 /contact             → ContactPage
+/terms               → TermsPage
+/privacy             → PrivacyPage
+/refund              → RefundPage
 /hp-printer          → HPLandingPage
 /wireless-printers   → Redirects to /hp-printer
 /printers            → ShopPage
@@ -123,6 +148,7 @@ hd-printer/
 - **React Router v6**: Client-side routing
 - **Formspree**: Form submission handling
 - **Lucide React**: Icon library
+- **React Loader Spinner**: Windmill loading animation
 
 ## 📦 Installation & Setup
 
@@ -209,4 +235,4 @@ See `FORMSPREE_SETUP.md` for detailed Formspree integration instructions.
 
 For support or questions about the HP Printer setup, use the support form on `/hp-printer` page (Step 6).
 
-Email: contact@printandink.online
+Email: Info@hawlettprint.online

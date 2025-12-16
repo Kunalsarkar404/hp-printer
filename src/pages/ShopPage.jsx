@@ -69,14 +69,7 @@ export default function ShopPage() {
             category: 'Printers, Brother Printers',
             price: '$193',
             image: '/brotherprinter8.jpg'
-        },
-        {
-            id: 10,
-            name: 'Brother MFC-J6540DW Wireless Colour Inkjet Printer...',
-            category: 'Printers, Brother Printers',
-            price: '$215',
-            image: '/brotherprinter9.webp'
-        },
+        }
     ];
 
     const categories = [

@@ -10,14 +10,14 @@ export default function Footer() {
     return (
         <footer className="bg-gray-900 text-gray-300">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
                     {/* Logo and Description */}
                     <div className="col-span-1 sm:col-span-2 lg:col-span-2">
                         <Link to="/" className="flex items-center mb-4">
                             <img
                                 src="/new-hp-logo.svg"
-                                alt="Print & Ink"
-                                className="h-12 w-12"
+                                alt="Hawlett Print"
+                                className="w-24 h-16 object-contain"
                                 loading="lazy"
                             />
                         </Link>
@@ -85,10 +85,10 @@ export default function Footer() {
                         <h4 className="text-white font-semibold mb-4 text-sm sm:text-base">Contact</h4>
                         <div className="text-sm">
                             <a
-                                href="mailto:contact@printandink.online"
+                                href="mailto:Info@hawlettprint.online"
                                 className="hover:text-white transition-colors flex items-center gap-2"
                             >
-                                <span>📧</span> contact@printandink.online
+                                <span>📧</span> Info@hawlettprint.online
                             </a>
                         </div>
                     </div>

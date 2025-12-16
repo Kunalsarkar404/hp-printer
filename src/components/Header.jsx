@@ -15,7 +15,7 @@ export default function Header() {
             {/* Top Bar */}
             <div className="bg-gray-900 text-white text-xs sm:text-sm py-2 px-4">
                 <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
-                    <p className="text-center sm:text-left">Available 24/7 at contact@printandink.online</p>
+                    <p className="text-center sm:text-left">Available 24/7 at Info@hawlettprint.online</p>
                 </div>
             </div>
 
@@ -27,10 +27,11 @@ export default function Header() {
                         <Link to="/" className="flex items-center">
                             <img
                                 src="/new-hp-logo.svg"
-                                alt="Print & Ink"
-                                className="h-10 w-10 sm:h-12 sm:w-12"
+                                alt="Hawlett Print"
+                                className="w-16 h-12 object-contain"
                                 loading="eager"
                             />
+
                         </Link>
 
                         {/* Desktop Navigation */}
