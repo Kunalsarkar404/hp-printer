@@ -21,9 +21,6 @@ function App() {
         <Route path="/privacy" element={<PrivacyPage />} />
         <Route path="/refund" element={<RefundPage />} />
         <Route path="/hp-printer" element={<HPLandingPage />} />
-        <Route path="/wireless-printers" element={<Navigate to="/hp-printer" replace />} />
-        <Route path="/printers" element={<ShopPage />} />
-        <Route path="/laser-printers" element={<ShopPage />} />
       </Routes>
     </BrowserRouter>
   )

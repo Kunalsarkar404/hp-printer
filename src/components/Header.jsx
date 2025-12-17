@@ -121,8 +121,6 @@ export default function Header() {
                                 <Link to="/" onClick={() => setMobileMenuOpen(false)}>Home</Link>
                                 <Link to="/about" onClick={() => setMobileMenuOpen(false)}>About Us</Link>
                                 <Link to="/shop" onClick={() => setMobileMenuOpen(false)}>Shop</Link>
-                                <Link to="/printers" onClick={() => setMobileMenuOpen(false)}>Printers</Link>
-                                <Link to="/laser-printers" onClick={() => setMobileMenuOpen(false)}>Laser Printers</Link>
                                 <div className="w-full text-center">
                                     <button
                                         onClick={() => setMobileWirelessOpen(!mobileWirelessOpen)}
